@@ -1,0 +1,50 @@
+.body-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.text-box-wrapper {
+  width: 70%;
+  margin-bottom: 60px;
+}
+
+p {
+  color: rgb(94, 90, 90);
+  padding-bottom: 25px;
+  font-size: 1.2rem;
+  text-align: left;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+
+.treatment-list {
+  padding-bottom: 25px;
+  padding-left: 30px;
+  line-height: 1.5;
+}
+
+.treatment-list-item {
+  list-style-position: outside;
+  list-style-type: disc;
+  font-size: 1.2rem;
+  color: rgb(94, 90, 90);
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 850px) {
+  .text-box-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .body-img-wrapper {
+    width: 330px;
+    height: 193px;
+  }
+  .body-img-orange {
+    width: 330px;
+    height: 193px;
+  }
+}

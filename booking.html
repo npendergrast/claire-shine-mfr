@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Booking for myofascial release therapy Waiuku | Claire Shine</title>
+  <meta name="description"
+    content="Make a booking with Claire Shine Myofascial Release using the online booking form." />
+  <link rel="stylesheet" type="text/css" href="CSS-Styling/shared.css" />
+  <link rel="stylesheet" type="text/css" href="CSS-Styling/booking.css" />
+  <link href="CSS-Styling/css/all.min.css" rel="stylesheet">
+  <link rel="icon" href="Images/favicon.png" sizes="16x16" type="image/png">
+  <meta name="theme-color" content="#00a599" />
+</head>
+
+<body>
+  <div class="filter-overlay"></div>
+  <header class="main-header">
+    <img class="brand-text" src="Images/brand.png" alt="brand">
+    <a class="logo-link" href="/"><img src="Images/logo.png" alt="logo" class="main-logo" /></a>
+    <a class="logo-link-2" href="/"><img src="Images/logo2.png" alt="logo" class="main-logo-2" /></a>
+    <nav class="main-menu">
+      <ul class="main-menu-items">
+        <li class="main-menu-item">
+          <a class="main-menu-link" href="/">
+            <div class="main-menu-name">Home</div>
+            <span class="vl-menu"></span>
+          </a>
+        </li>
+        <span class="hl-menu"></span>
+        <li class="main-menu-item">
+          <a class="main-menu-link" href="about.html">
+            <div class="main-menu-name">About</div>
+            <span class="vl-menu"></span>
+          </a>
+        </li>
+        <span class="hl-menu"></span>
+        <li class="main-menu-item">
+          <a class="main-menu-link" href="treatment.html">
+            <div class="main-menu-name">Treatment</div>
+            <span class="vl-menu"></span>
+          </a>
+        </li>
+        <span class="hl-menu"></span>
+        <li class="main-menu-item">
+          <a class="main-menu-link" href="contact.html">
+            <div class="main-menu-name">Contact</div>
+            <span class="vl-menu"></span>
+          </a>
+        </li>
+        <span class="hl-menu"></span>
+        <li class="main-menu-item">
+          <a class="main-menu-link call-to-action" href="booking.html">
+            <div class="main-menu-name name-active">Book</div>
+
+          </a>
+        </li>
+        <span class="hl-menu"></span>
+      </ul>
+      </li>
+      </ul>
+    </nav>
+    <nav class="mobile-menu-wrapper">
+      <a class="mobile-call-to-action-wrapper" href="booking.html">
+        <div class="mobile-call-to-action">Book</div>
+      </a>
+      <div class="menu-icon-wrapper">
+        <i class="menu-icon fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <div class="background-img-wrapper">
+      <div class="background-img"></div>
+      <h1 class="page-heading">Make a booking</h1>
+    </div>
+    <div class="iframe-wrapper">
+      <div class="loader"></div>
+      <iframe id='cliniko-23175213' src='https://claire-shine-physiotherapy.au1.cliniko.com/bookings?embedded=true'
+        frameborder='0' scrolling='auto' style='pointer-events: auto;'></iframe>
+      <script type='text/javascript'>
+        window.addEventListener('message', function handleIFrameMessage(e) {
+          var clinikoBookings = document.getElementById('cliniko-23175213');
+          if (typeof e.data !== 'string') return;
+          if (e.data.search('cliniko-bookings-resize') > -1) {
+            var height = Number(e.data.split(':')[1]);
+            clinikoBookings.style.height = height + 50 + 'px';
+          }
+          var bookingPos = document.querySelector(".iframe-wrapper").offsetTop - 120;
+          e.data.search('cliniko-bookings-page') > -1 && window.scrollTo(0, bookingPos); //clinikoBookings.scrollIntoView();
+        });
+      </script>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-wrapper">
+      <a href="https://www.facebook.com/claireshineMFR/" target=""><i class="fab fa-facebook"></i></a>
+      <div class="vl"></div>
+      <div class="footer-sub-wrapper">
+        <a class="footer-links" href="privacy.html" title="">Privacy</a>
+        <a class="footer-links" href="contact.html" title="">Contact</a>
+        <a class="footer-links" href="booking.html" title="">Book</a>
+      </div>
+      <div class="vl"></div>
+      <div class="footer-links copyright">&copy; Claire Shine | 2020</div>
+      <div class="vl"></div>
+      <a class="footer-links" href="https://www.npendergrast.com/" title="">Site by NP</a>
+    </div>
+    <div class="scroll-up-wrapper"><i class="fas fa-chevron-up scroll-up"></i></div>
+  </footer>
+</body>
+<script src="Javascript/shared.js"></script>
+<script src="Javascript/booking.js"></script>
+
+</html>
