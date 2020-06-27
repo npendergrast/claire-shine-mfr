@@ -725,11 +725,10 @@ html {
 
 @media (max-width: 350px) {
   .main-logo-2 {
-    top: 12px;
-    width: 100px;
-    height: 100px;
-    left: 2px;
+    left: 2%;
   }
+
+  /*
   .main-logo-2-shrink {
     top: 2px;
     height: 80px;
@@ -738,6 +737,7 @@ html {
     left: 2px;
     transition: 0.5s;
   }
+  */
   .brand-text {
     left: calc(80px + 4px);
   }
