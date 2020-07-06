@@ -23,9 +23,13 @@ scrollBtn.addEventListener('click', scrollToTop);
 menuIcon.addEventListener('click', menuSlide);
 filterOverlay.addEventListener('click', menuSlide);
 
+window.onload = function () {
+  navScroll();
+  scrollBtnVisible();
+};
+
 window.onscroll = function () {
   navScroll();
-  //mobileScroll();
   scrollBtnVisible();
 };
 
@@ -57,16 +61,6 @@ function navScroll() {
       vlMenu[i].classList.remove('vl-menu-shrink');
     }
   }
-}
-
-function mobileScroll() {
-  var newPagePos = window.pageYOffset;
-  if (newPagePos > pagePosition) {
-    navBar.classList.add('mobile-menu-up');
-  } else {
-    navBar.classList.remove('mobile-menu-up');
-  }
-  pagePosition = newPagePos;
 }
 
 function scrollBtnVisible() {
